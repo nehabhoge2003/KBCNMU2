@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>json</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const txt='{"name":"neha","age":20 ,"city":"cjamner"}'
+        const obj=JSON.parse(txt);
+        document.getElementById("demo").innerHTML=obj.name+","+obj.age+","+obj.city;
+    </script>
+<script>
+        const obj1={name:"neha",age:20,city:"jamner"};
+        const myJSON=JSON.stringify(obj);
+        document.getElementById("demo1").innerHTML=myJSON;
+</script>
+    
+</body>
+</html>
